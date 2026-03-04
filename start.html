@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Your Project | Space Craft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/jpg" href="https://png.pngtree.com/png-clipart/20200727/original/pngtree-building-and-construction-logo-design-template-png-image_5137683.jpg">
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #1a1a1a, #000);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 120px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            color: gray;
+            margin-bottom: 60px;
+            max-width: 600px;
+        }
+
+        form {
+            display: grid;
+            gap: 30px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        input, select, textarea {
+            background: #111;
+            border: 1px solid #333;
+            padding: 14px 20px;
+            border-radius: 12px;
+            color: white;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: none;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border: 1px solid white;
+        }
+
+        .half {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            background: white;
+            color: black;
+            padding: 16px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255,255,255,0.2);
+        }
+
+        .note {
+            margin-top: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        Let’s Build Something Exceptional
+    </div>
+
+    <div class="subtitle">
+        Tell us about your vision. We carefully review every project request to ensure alignment, feasibility, and long-term impact.
+    </div>
+
+    <form>
+
+        <div class="row">
+            <div class="half">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="half">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="half">
+                <input type="text" placeholder="Company / Organization">
+            </div>
+            <div class="half">
+                <input type="text" placeholder="Project Location">
+            </div>
+        </div>
+
+        <select required>
+            <option value="">Project Type</option>
+            <option>Residential Development</option>
+            <option>Commercial Complex</option>
+            <option>Mixed-Use Urban Project</option>
+            <option>Interior Design</option>
+            <option>Other</option>
+        </select>
+
+        <select required>
+            <option value="">Estimated Budget</option>
+            <option>$100K - $500K</option>
+            <option>$500K - $1M</option>
+            <option>$1M - $5M</option>
+            <option>$5M+</option>
+        </select>
+
+        <textarea placeholder="Describe your vision, timeline, and goals..." required></textarea>
+
+        <button class="submit-btn" type="submit">
+            Submit Project Inquiry
+        </button>
+
+    </form>
+
+    <div class="note">
+        Our team responds within 48 hours. Serious inquiries only.
+    </div>
+
+</div>
+
+</body>
+</html>

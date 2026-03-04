@@ -1,0 +1,323 @@
+.corner-blend{
+    -webkit-mask-image:
+    linear-gradient(to top,black 80%, transparent 100%),
+    linear-gradient(to left, black 80%,transparent 100%),
+    linear-gradient(to right, black 80%,transparent 100%),
+    linear-gradient(to bottom, black 80%,transparent 100%);
+    -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+}
+.intpic{
+  position: absolute;
+  top: 7vh;
+  width: 100%;
+  
+}
+.navv{
+    width: 100%;
+}
+.navv button{
+  right: 0;
+}
+
+*{
+  font-family: sans-serif;
+}
+.contact{
+  position: absolute;
+  width: 90px;
+  top: 20px;
+
+}
+.navv a{
+  font-size: larger;
+  font-weight: 900;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+}
+.leftc{
+  width: 50%;
+  position: absolute;
+  top: 25vh;
+  padding-left: 50px;
+  color: white ;
+  
+}
+.leftc .bold{
+  font-weight: 1000;
+  font-size: 50px;
+}
+.leftc .subscript{
+  margin-top: 5vh;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 2px;
+}
+body {
+  background: radial-gradient(circle at top right, #1a1a1a, #000);
+}
+.rightp{
+  width: 50%;
+  display: flex;
+  position: absolute;
+  right: 16%;
+  top: -5%;
+  height: 105vh;
+}
+.leftc button {
+  margin-top: 40px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 14px 60px;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+}
+
+.leftc button:hover {
+  box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+  transition: 0.5s ease;
+}
+
+.contact{
+
+  position: relative;
+  top: 5vh; 
+  display: flex;
+  background-color: transparent;
+  border: 1px solid;
+  color: white ;
+  padding: 10px 60px 10px;
+  border-radius: 50px;
+  font-weight: 900;
+  z-index: 9;
+  text-align: center;
+  
+}
+.contact:hover{
+
+  position: relative;
+  top: 5vh;
+  display: flex;
+  background-color: white;
+  border: 1px solid;
+  color: black ;
+  padding: 10px 60px 10px;
+  border-radius: 50px;
+  font-weight: 900;
+   box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.575);
+   z-index: 9;
+  
+}
+.navv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 5%;
+}
+@media (max-width: 1024px) {
+
+  .leftc {
+    width: 60%;
+    top: 20vh;
+    padding-left: 30px;
+  }
+
+  .leftc .bold {
+    font-size: 2.4rem;
+  }
+
+  .rightp {
+    width: 60%;
+    right: 0;
+    opacity: 0.8;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .interior{
+    width: 100%;
+  }
+
+  .leftc {
+    width: 100%;
+    position: relative;
+    top: 15vh;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .leftc .bold {
+    font-size: 2rem;
+  }
+
+  .leftc .subscript {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .rightp {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 20vh;
+    right: 0;
+    margin-top: 30px;
+  }
+
+  .navv a {
+    font-size: 1rem;
+  }
+
+  .leftc button,
+  .contact {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+}
+
+body{
+            background-color: black;
+            color: white;
+        }
+
+.section {
+            padding: 100px 8%;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            color: gray;
+            max-width: 600px;
+            margin-bottom: 60px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: #111;
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255,255,255,0.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .review-section {
+            background: #0f0f0f;
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .review-card {
+            background: #161616;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .review-card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .review-author {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .stat-box {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 30px;
+        }
+
+        .stat-box h2 {
+            font-size: 36px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 80px;
+        }
+.cta a{
+  text-decoration: none;
+}
+        .cta button {
+            background: white;
+            color: black;
+            padding: 14px 60px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .cta button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255,255,255,0.2);
+        }
+        
